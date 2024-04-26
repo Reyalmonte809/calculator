@@ -37,7 +37,6 @@
             const numberOfMonths = Number(numberOfMonthsElement.value) * 12;
             const result = getpayment(principalAmount, percentRate, numberOfMonths)
             outputElement.value = result.toFixed(2);
-            
         }
 
         calc.onclick = doCalc
