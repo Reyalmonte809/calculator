@@ -1,0 +1,52 @@
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 80%;
+}
+
+button {
+    padding: 1rem;
+
+}
+
+.answer {
+    padding: 10px;
+    font-size: 16pt;
+    text-align: end;
+}
+
+
+.row1 {
+    margin-top: 1rem;
+}
+
+.background {
+    background-color: gray;
+    border: solid 3px black;
+    width: 30rem;
+    max-width: 40%;
+    
+
+}
+
+.screen {
+    background-color: black;
+    width: 30rem;
+    max-width: 40%;
+    text-align: center;
+}
+
+.row3 {
+    max-width: 60%;
+}
+
+.zero{
+    padding: 1rem 3.3rem;
+    margin-right: 2rem;
+}
+
+.plus{
+    
+}

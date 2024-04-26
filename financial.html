@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <h1>Financial Loan Calculator</h1>
+    <p>Loan Amount <input type="text" id="principalAmountElement" ><br></p>
+    <p>Interest <input type="text" id="percentRateElement" ><br></p>
+    <p>Years <input type="text" id="numberOfMonthsElement" ><br></p>
+    <button id="calc">Calculate</button><br>
+
+    <label>Monthly Payments $:<input id="outputElement" readonly></label><br>
+
+</body>
+<script>
+    // go.onclick =() => z.value = add(Number(x.value), Number(y.value));
+
+    // run.onclick= () => rec.value = recommend(Number(age,value));
+
+    // function handleClick(){
+    //     let text = recommend (Number(age.value));
+    //     rec.value = text;
+    // }
+
+    // // run = document.getElementById("run")
+    // // run.addEventListener("click", handleClick);
+    // mul.onclick = () => answer.value = Number(x.value) * Number(y.value) * Number(z.value)
+
+        function doCalc(){
+            const principalAmount = Number(principalAmountElement.value);
+            const percentRate = Number(percentRateElement.value) / 100;
+            const numberOfMonths = Number(numberOfMonthsElement.value) * 12;
+            const result = getpayment(principalAmount, percentRate, numberOfMonths)
+            outputElement.value = result.toFixed(2);
+            
+        }
+
+        calc.onclick = doCalc
+</script>
+</html>
